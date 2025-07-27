@@ -38,6 +38,24 @@ All features are normalized and combined into a weighted risk scoring formula.
 
 ## 📂 Project Structure
 
+```bash
+wallet-risk-scoring/
+│
+├── main.py                 # Extracts wallet activity & saves CSV
+├── score_wallets.py        # Scores wallets based on logic
+├── visualize_scores.py     # Plots graphs from final scores
+├── config.py               # Configurations for weightage & thresholds
+├── utils/                  # Utility functions (parsing, formatting, etc.)
+│
+├── real_wallets.csv        # Raw input wallet list
+├── compound_v3_wallet_data.csv  # Cleaned dataset
+├── wallet_scores.csv       # Final output with scores
+│
+├── sample-output.png       # Screenshot of score visualizations
+├── README.md               # You’re reading it 😊
+├── LICENSE
+└── requirements.txt
+
 
 ---
 
@@ -50,11 +68,7 @@ All features are normalized and combined into a weighted risk scoring formula.
 
 ---
 
-## 📊 Sample Output
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/wallet-risk-scoring/main/sample-output.png" width="70%" />
-</p>
 
 ---
 
